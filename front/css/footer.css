@@ -1,0 +1,76 @@
+/* Estilos generales para la sección del pie de página */
+.footer {
+  background-color: rgb(104, 104, 119);
+  color: #fff;
+  padding: 55px 0;
+  text-align: center;
+}
+
+/* Estilos para el contenedor */
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Estilos para las columnas */
+.footer .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para el texto de copyright */
+.footer .copy {
+  margin-bottom: 15px;
+}
+
+.footer .copy a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 350;
+}
+
+.footer .copy a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para los enlaces de términos y condiciones y políticas de privacidad */
+.footer .wrapper {
+  margin-bottom: 15px;
+}
+
+.footer .wrapper a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer .wrapper a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para los iconos sociales */
+.footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer .social a {
+  color: #fff;
+  font-size: 1.5em;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.footer .social a:hover {
+  color: #ccc;
+}
+
+/* Estilos responsivos */
+@media (max-width: 991.98px) {
+  .footer .row {
+    flex-direction: column;
+  }
+}

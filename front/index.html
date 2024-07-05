@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/carrito.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+    <title>Maria & Matias - Unqui Dev's</title>
+    <!-- API FORM EMAIL -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      emailjs.init("N1HDRi1F-oKbF0R21");
+    </script>
+    <!-- SWEETALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Iconos -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </head>
+  <body>
+    <!--Navbar  -->
+    <header>
+      <div class="container">
+        <p class="logo">Unqui Dev's</p>
+        <nav>
+          <a href="#">Inicio</a>
+          <a href="#" id="open-form">Asistencia</a>
+          <a href="#" id="cart-button"
+            >Regalo (<span id="cart-count">0</span>)</a
+          >
+          <a href="#footer">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Banner Inicio-->
+    <section class="banner" id="banner">
+      <h2>MARIA & MATIAS</h2>
+      <p>21/09/2024</p>
+    </section>
+
+    <!-- Boda Info -->
+    <section class="info" id="info">
+      <div class="container">
+        <h2>¡NOS CASAMOS!</h2>
+        <h4>Y QUEREMOS COMPARTIR ESTE DIA CON VOS!</h4>
+        <p>
+          Te dejamos toda la informacíon de nuestro casamiento, para que nos
+          acompañes en este gran día.
+        </p>
+        <h4>💍 CEREMONIA Y FIESTA</h4>
+        <p>Sábado 21 de Septiembre de 2024 16:30 HS.</p>
+        <h4>📍 ESTANCIA EL RECUERDO</h4>
+        <p>505 y 30 Bis 6608 Agote, Buenos Aires.</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.82149923988!2d-59.36636152348155!3d-34.63395087294341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc71f532f2a5b7%3A0xd35cf9bc1d0b89fc!2sEstancia%20El%20Recuerdo!5e0!3m2!1ses-419!2sar!4v1715808495933!5m2!1ses-419!2sar"
+          width="70%"
+          height="400"
+          style="border-radius: 12px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Galeria Fotos -->
+    <section class="galeria" id="galeria">
+      <div class="container">
+        <h2>• GALERÍA •</h2>
+        <div class="row">
+          <div class="column">
+            <img
+              src="/front/img/img-galeria/galeria01.jpg"
+              alt="Maria y matias img"
+            />
+            <img
+              src="/front/img/img-galeria/galeria02.jpg"
+              alt="Maria y matias img"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="/front/img/img-galeria/galeria06.jpg"
+              alt="Maria y matias img"
+              class="photov"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="/front/img/img-galeria/galeria03.jpg"
+              alt="Maria y matias img"
+            />
+            <img
+              src="/front/img/img-galeria/galeria04.jpg"
+              alt="Maria y matias img"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="/front/img/img-galeria/galeria12.jpg"
+              alt="Maria y matias img"
+            />
+            <img
+              src="/front/img/img-galeria/galeria13.jpg"
+              alt="Maria y matias img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spotify -->
+    <section class="spotify">
+      <div class="container">
+        <h2>¿QUÉ CANCIONES NO PUEDEN FALTAR?</h2>
+        <p>Ayudanos a armar nuestra lista en Spotify!</p>
+        <a
+          href="https://open.spotify.com/playlist/1HQwZmOB9Zqu8gpOKveZQU?si=f9f84531ce834cf7"
+          target="_blank"
+          class="btn"
+          >AGREGÁ CANCIONES</a
+        >
+        <div class="style-spotify">
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/playlist/1HQwZmOB9Zqu8gpOKveZQU?utm_source=generator&theme=0"
+            width="70%"
+            height="500"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Regalo -->
+    <section class="regalo" id="regalo">
+      <div class="container">
+        <h2>¡Lo importante es que vengas!</h2>
+        <p>Pero si queres colaborar con nuetra luna de miel,</p>
+        <p>te dejamos con algunas ideas...</p>
+      </div>
+    </section>
+
+    <!-- Opciones de Regalo -->
+    <section class="card" id="card">
+      <div class="container">
+        <div class="card-content" id="card-content"></div>
+      </div>
+    </section>
+
+    <!-- Modal CARRITO -->
+    <div id="cart-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close-cart">&times;</span>
+        <h3>Regalo para Maria & Matias</h3>
+        <div id="cart-items"></div>
+        <!-- Modal FORM REGALO -->
+        <form id="cart-form">
+          <label for="dedication">Dedicatoria:</label>
+          <textarea
+            name="dedication"
+            id="dedication"
+            rows="3"
+            placeholder="Escriba aqui su mensaje"
+            required
+          ></textarea>
+          <label for="name">Nombre/Familia:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ej. Flia. Lopez"
+            required
+          />
+          <button type="submit" id="button-f" m value="Send Email">
+            Enviar Dedicatoria
+          </button>
+        </form>
+        <div id="cart-total">Total: <span id="total-amount">0.00</span></div>
+        <button id="payButton">Ir a pagar</button>
+        <div id="paymentInfo" class="hidden">
+          <img
+            src="/front/img/img-otros/datos_bancarios.png"
+            alt="Datos Bancarios"
+            class="imgMP"
+          />
+          <div id="myModal" class="modalC">
+            <button onclick="showAlertAndCloseModal()">Aceptar y Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL RSVP -->
+    <div id="form-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModalf()">&times;</span>
+        <h3>Confirmación de Asistencia</h3>
+        <form id="attendance-form">
+          <label for="full-name">Nombre Completo:</label>
+          <input type="text" id="full-name" name="full-name" required />
+
+          <label for="companion-name">Nombre de tu acompañante:</label>
+          <input
+            type="text"
+            id="companion-name"
+            name="companion-name"
+            required
+          />
+
+          <label for="attendance">Asistencia:</label>
+          <select id="attendance" name="attendance" required>
+            <option value="" disabled="selected">Selecciona una opción</option>
+            <option value="Asistire">Asistiré</option>
+            <option value="No Asistire">No Asistiré</option>
+          </select>
+
+          <label for="otros-name">Confirmo Asistencia por:</label>
+          <span>Agregar personas a cargo de ser necesario</span>
+          <input type="text" id="otros-name" name="otros-name" />
+
+          <label for="menu">Elección de Menú:</label>
+          <select id="menu" name="menu" required>
+            <option value="" disabled="selected">Selecciona una opción</option>
+            <option value="Sin Restricción">Sin Restricción</option>
+            <option value="Menú Vegetariano">Menú Vegetariano</option>
+            <option value="Menú Celíaco">Menú Celíaco</option>
+            <option value="Menú Infantíl">Menú Infantíl</option>
+          </select>
+
+          <label for="comentario">Comentarios:</label>
+          <span>Agregar comentarios extras de ser necesario</span>
+          <textarea
+            name="comentario"
+            id="comentario"
+            rows="3"
+            placeholder=""
+          ></textarea>
+
+          <button type="submit" id="button">Confirmar Asistencia</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 copy">
+            <a href="#"
+              >Unqui Dev's &copy; 2024 || Todos los derechos reservados</a
+            >
+          </div>
+          <div class="col-12 social">
+            <a href="https://www.instagram.com/unquidevs/" target="_blank">
+              <box-icon type="logo" name="instagram"></box-icon>
+            </a>
+            <a href="mailto:unquidev@gmail.com" target="_blank">
+              <box-icon type="logo" name="gmail"></box-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/formCart.js"></script>
+    <script src="js/formRSVP.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

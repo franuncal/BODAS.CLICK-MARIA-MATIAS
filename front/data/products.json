@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Pasaje Aéreo Buenos Aires-Roma",
+        "price": 1000000,
+        "quantity": 20,
+        "image": "img/Img-card/card-01-avion.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Pasaje Aereo Italia-Grecia",
+        "price": 750000,
+        "quantity": 20,
+        "image": "img/img-card/card-10-vuelosint.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Estadía en Isla Griega",
+        "price": 500000,
+        "quantity": 20,
+        "image": "img/img-card/card-04-santorini.jpeg"
+    },
+    {
+        "id": 4,
+        "name": "Noche de Boda en Italia",
+        "price": 250000,
+        "quantity": 20,
+        "image": "img/img-card/card-06-puglia.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "Tour en barco - Costa Amalfitana",
+        "price": 200000,
+        "quantity": 20,
+        "image": "img/img-card/card-09-grutas.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "Excursión en Velero por Grecia",
+        "price": 180000,
+        "quantity": 20,
+        "image": "img/img-card/card-02-velero.jpeg"
+    },
+    {
+        "id": 7,
+        "name": "Tour por la Ciudad Antigua",
+        "price": 150000,
+        "quantity": 20,
+        "image": "img/img-card/card-05-atenas.jpeg"
+    },
+    {
+        "id": 8,
+        "name": "Tour a Playas - Cerdeña",
+        "price": 120000,
+        "quantity": 20,
+        "image": "img/img-card/card-12-playas.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Alquiler de Auto",
+        "price": 100000,
+        "quantity": 20,
+        "image": "img/img-card/card-07-auto.jpeg"
+    },
+    {
+        "id": 10,
+        "name": "Drinks con vista al mar",
+        "price": 90000,
+        "quantity": 20,
+        "image": "img/img-card/card-08-drink.jpeg"
+    },
+    {
+        "id": 11,
+        "name": "Día de SPA",
+        "price": 80000,
+        "quanty": 20,
+        "image": "img/img-card/card-11-spa.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Brunch con vista al Mar",
+        "price": 70000,
+        "quantity": 20,
+        "image": "img/img-card/card-03-brunch.jpeg"
+    }
+]
