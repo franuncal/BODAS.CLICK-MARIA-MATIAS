@@ -148,13 +148,14 @@ header a:hover {
         rgba(0, 0, 0, 0.5)
       ),
       url("/front/img/img-fotos/m&m\ -\ 05.jpg");
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: right center;
+    background-position: 80%;
   }
 }
 @media (max-width: 800px) {
   .banner {
+    height: 100vh;
     flex: 50%;
     background-image: linear-gradient(
         0deg,
@@ -162,9 +163,16 @@ header a:hover {
         rgba(0, 0, 0, 0.5)
       ),
       url("/front/img/img-fotos/m&m\ -\ 05.jpg");
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: right center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 80%;
+  }
+
+  .banner h2 {
+    font-family: "Antic Didone", sans-serif;
+    font-size: 2.3rem;
+    color: antiquewhite;
+    padding-top:75px;
   }
 }
 
