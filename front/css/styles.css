@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap");
 
 * {
@@ -65,8 +65,10 @@ button:hover {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1920px;
   margin: auto;
+  padding-right: 60px;
+  padding-left: 60px;
 }
 
 /* Navbar */
@@ -75,10 +77,11 @@ header {
 }
 
 header .logo {
+  font-family: "Antic Didone", sans-serif;
   margin: 0;
   padding: 25px 30px;
   color: #cfa9be;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -106,6 +109,58 @@ header a {
 
 header a:hover {
   color: #dbc0cf;
+}
+
+@media (max-width: 600px) {
+  header .container {
+    padding: 15px 0;
+    font-size: 16px;
+  }
+
+  header .nav {
+    padding: 15px 0;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  header .container {
+    padding: 15px 0;
+    font-size: 16px;
+  }
+
+  header .nav {
+    padding: 15px 0;
+    font-size: 16px;
+  }
+}
+
+/* Cart */
+.cart-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #cfa9be; /* Color atractivo */
+  color: white;
+  border-radius: 50%;
+  padding: 10px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.cart-button:hover {
+  transform: scale(1.1);
+  background-color: #dbc0cf;
+}
+
+.cart-button span {
+  font-weight: normal;
+  font-size: 16px;
 }
 
 /* Banner Inicio */
@@ -163,21 +218,22 @@ header a:hover {
         rgba(0, 0, 0, 0.5)
       ),
       url("/front/img/img-fotos/m&m\ -\ 05.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80%;
   }
 
   .banner h2 {
     font-family: "Antic Didone", sans-serif;
     font-size: 2.3rem;
     color: antiquewhite;
-    padding-top:75px;
+    padding-top: 75px;
   }
 }
 
 /* Boda Info */
 .info .container {
+  width: 80%;
   text-align: center;
   padding: 110px 15px;
 }
@@ -216,8 +272,9 @@ header a:hover {
 
 /* Galeria */
 .galeria .container {
+  width: 80%;
   text-align: center;
-  padding: 110px 12px;
+  padding: 50px 12px;
 }
 
 .galeria h2 {
@@ -252,7 +309,7 @@ header a:hover {
   height: auto;
 }
 
-.column-v img{
+.column-v img {
   width: 50%;
   align-items: start;
 }
@@ -276,8 +333,9 @@ header a:hover {
 
 /* Spotify */
 .spotify .container {
+  width: 80%;
   text-align: center;
-  padding: 110px 12px;
+  padding: 50px 12px;
   padding-bottom: 8rem;
 }
 

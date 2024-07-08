@@ -27,17 +27,22 @@
     <!--Navbar  -->
     <header>
       <div class="container">
-        <p class="logo">Unqui Dev's</p>
+        <p class="logo">M & M</p>
         <nav>
           <a href="#">Inicio</a>
           <a href="#" id="open-form">Asistencia</a>
-          <a href="#" id="cart-button"
-            >Regalo (<span id="cart-count">0</span>)</a
-          >
+          <!-- <a href="#" id="cart-button">Regalo (<span id="cart-count">0</span>)</a> -->
           <a href="#footer">Contacto</a>
         </nav>
       </div>
     </header>
+
+    <div id="cart-button" class="cart-button">
+      <box-icon name="cart-alt" type="solid"></box-icon
+      ><span id="cart-count">0</span>
+    </div>
+
+    <!-- <box-icon name='cart'></box-icon> -->
 
     <!-- Banner Inicio-->
     <section class="banner" id="banner">
@@ -195,12 +200,12 @@
             class="imgMP"
           />
           <div id="myModal" class="modalC">
-            <button onclick="showAlertAndCloseModal()">Aceptar y Cerrar</button>
+            <button id="acceptAndCloseButton">Aceptar y Cerrar</button>
           </div>
         </div>
       </div>
     </div>
-
+    
     <!-- MODAL RSVP -->
     <div id="form-modal" class="modal">
       <div class="modal-content">
@@ -274,7 +279,7 @@
     </section>
 
     <script src="js/formCart.js"></script>
-    <script src="js/formRSVP.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/formRSVP.js"></script>
   </body>
 </html>
