@@ -266,6 +266,7 @@ header a:hover {
 
 /* Info - Google Maps */
 .info iframe {
+  width: 100%;
   text-align: center;
   border: 2px solid rgb(230, 230, 230);
 }
@@ -333,7 +334,7 @@ header a:hover {
 
 /* Spotify */
 .spotify .container {
-  width: 80%;
+  width: 100%;
   text-align: center;
   padding: 50px 12px;
   padding-bottom: 8rem;
@@ -373,6 +374,23 @@ header a:hover {
   padding-bottom: 2rem;
 }
 
+@media (max-width: 600px) {
+  .spotify .container {
+    width: 100%;
+    text-align: center;
+    padding: 50px 12px;
+    padding-bottom: 8rem;
+  }
+}
+@media (max-width: 800px) {
+  .spotify .container {
+    width: 100%;
+    text-align: center;
+    padding: 50px 12px;
+    padding-bottom: 8rem;
+  }
+}
+
 /* Banner Regalo */
 .regalo {
   display: flex;
@@ -393,8 +411,10 @@ header a:hover {
 }
 
 .regalo h2 {
-  font-weight: 400;
-  letter-spacing: 0.4rem;
+  font-family: "Antic Didone", sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+  letter-spacing: 0.3rem;
   padding-bottom: 1.5rem;
   color: antiquewhite;
 }

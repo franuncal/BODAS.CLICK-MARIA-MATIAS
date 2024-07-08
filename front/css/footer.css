@@ -1,7 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 /* Estilos generales para la sección del pie de página */
 .footer {
-  background-color: rgb(104, 104, 119);
-  color: #fff;
+  background-color: rgb(198, 198, 208);
   padding: 55px 0;
   text-align: center;
 }
@@ -26,7 +26,8 @@
 }
 
 .footer .copy a {
-  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  color: #000;
   text-decoration: none;
   font-weight: 350;
 }
