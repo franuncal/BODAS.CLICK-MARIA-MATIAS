@@ -111,6 +111,30 @@ header a:hover {
   color: #dbc0cf;
 }
 
+@media (max-width: 600px) {
+  header .container {
+    padding: 15px 0;
+    font-size: 16px;
+  }
+
+  header .nav {
+    padding: 15px 0;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  header .container {
+    padding: 15px 0;
+    font-size: 16px;
+  }
+
+  header .nav {
+    padding: 15px 0;
+    font-size: 16px;
+  }
+}
+
 /* Cart */
 .cart-button {
   position: fixed;
@@ -168,6 +192,43 @@ header a:hover {
   font-family: "Antic Didone", sans-serif;
   font-size: 1.5rem;
   color: antiquewhite;
+}
+
+@media (max-width: 600px) {
+  .banner {
+    flex: 100%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("/front/img/img-fotos/m&m\ -\ 05.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .banner {
+    height: 100vh;
+    flex: 50%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("/front/img/img-fotos/m&m\ -\ 05.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80%;
+  }
+
+  .banner h2 {
+    font-family: "Antic Didone", sans-serif;
+    font-size: 2.3rem;
+    color: antiquewhite;
+    padding-top: 75px;
+  }
 }
 
 /* Boda Info */
@@ -254,6 +315,23 @@ header a:hover {
   align-items: start;
 }
 
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+  .column-2 {
+    flex: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+  }
+  .column-2 {
+    flex: 50%;
+  }
+}
+
 /* Spotify */
 .spotify .container {
   width: 100%;
@@ -294,6 +372,23 @@ header a:hover {
   text-align: center;
   padding: 100px 12px;
   padding-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  .spotify .container {
+    width: 100%;
+    text-align: center;
+    padding: 50px 12px;
+    padding-bottom: 8rem;
+  }
+}
+@media (max-width: 800px) {
+  .spotify .container {
+    width: 100%;
+    text-align: center;
+    padding: 50px 12px;
+    padding-bottom: 8rem;
+  }
 }
 
 /* Banner Regalo */
@@ -365,96 +460,107 @@ header a:hover {
   border: 2px solid #fff;
 }
 
-/* Media Queries */
+/* Responsive */
 @media (max-width: 1200px) {
-  .container {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
   .card-content {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 992px) {
-  header nav {
-    flex-direction: column;
-  }
-
-  .info .container,
-  .galeria .container {
-    width: 90%;
-  }
-
   .card-content {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 768px) {
-  header .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .banner {
-    height: 60vh;
-  }
-
-  .banner h2 {
-    font-size: 2rem;
-  }
-
-  .banner p {
-    font-size: 1.2rem;
-  }
-
-  .info .container,
-  .galeria .container,
-  .spotify .container {
-    width: 100%;
-  }
-
+@media (max-width: 576px) {
   .card-content {
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 576px) {
-  .banner {
-    height: 50vh;
+/* Responsive */
+@media (min-width: 720px) {
+  /* Navbar */
+  header {
+    position: fixed;
+    width: 100%;
   }
 
-  .banner h2 {
-    font-size: 1.5rem;
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  .banner p {
-    font-size: 1rem;
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
   }
 
-  .info h2,
-  .galeria h2,
-  .spotify h2 {
-    font-size: 1.5rem;
-  }
-
-  .info p,
-  .galeria p,
-  .spotify p {
-    font-size: 1rem;
-  }
-
-  .regalo {
-    height: 60vh;
-  }
-
+  /* Banner Regalo */
   .regalo h2 {
-    font-size: 1.2rem;
+    margin: 25px 20px;
   }
 
   .regalo p {
-    font-size: 1rem;
+    margin: 20px 15px;
+    padding: 16px 0px 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Banner Regalo */
+  .regalo h2 {
+    margin: 20px 15px;
+  }
+
+  .regalo p {
+    margin: 20px 15px;
+    padding: 16px 0px 0px;
+  }
+
+  /* Modal */
+  .modal-content {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal-header .close {
+    margin: -10px -8px -8px 308.312px;
+    padding: 8px;
+  }
+
+  form {
+    margin: 12px 15px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Modal */
+  .modal-content {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal-header .close {
+    margin: -10px -8px -8px 308.312px;
+    padding: 8px;
+  }
+
+  form {
+    margin: 12px 15px;
+  }
+
+  .modal-content-D {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .modal-containerD .closeD {
+    margin: -10px -8px -8px 308.312px;
+    padding: 8px;
   }
 }
