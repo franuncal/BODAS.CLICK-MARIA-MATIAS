@@ -4,14 +4,14 @@
         "name": "Pasaje Aéreo Buenos Aires-Roma",
         "price": 1000000,
         "quantity": 20,
-        "image": "img/Img-card/card-01-avion.jpeg"
+        "image": "/img/img-card/card-01-avion.jpeg"
     },
     {
         "id": 2,
         "name": "Pasaje Aéreo Italia-Grecia",
         "price": 750000,
         "quantity": 20,
-        "image": "img/img-card/card-10-vuelosint.jpg"
+        "image": "/img/img-card/card-10-vuelosint.jpg"
     },
     {
         "id": 3,
