@@ -115,7 +115,6 @@ header a:hover {
   color: #dbc0cf;
 }
 
-
 /* Cart */
 .cart-button {
   position: fixed;
@@ -157,7 +156,7 @@ header a:hover {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("/img/img-fotos/m&m\ -\ 05.jpg");
+    url('/../img/img-fotos/mm-05.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -314,7 +313,7 @@ header a:hover {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ),
-    url("/img/img-fotos/m&m\ -\ 08.jpg");
+    url('../img/img-fotos/mm-08.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -383,6 +382,10 @@ header a:hover {
 }
 
 @media (max-width: 992px) {
+  header {
+    position: static;
+  }
+
   header nav {
     flex-direction: column;
   }
