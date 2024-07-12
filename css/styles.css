@@ -65,10 +65,9 @@ button:hover {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1360px;
   margin: auto;
-  padding-right: 60px;
-  padding-left: 60px;
+  padding: 0 15px;
 }
 
 /* Navbar */
